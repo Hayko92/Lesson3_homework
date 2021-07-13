@@ -10,10 +10,6 @@ public final class Car {
         this.productionYear = productionYear;
         this.model = model;
         this.mark = mark;
-        Engine engineClone = new Engine();
-        engineClone.setHorsePower(engine.getHorsePower());
-        engineClone.setWeight(engine.getWeight());
-        engineClone.setMileage(engine.getMileage());
         this.engine = engine.copy();
     }
 
