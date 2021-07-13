@@ -46,4 +46,11 @@ public class Engine {
                 ", mileage=" + mileage +
                 '}';
     }
+    public Engine copy(Engine engine) {
+        Engine engineClone = new Engine();
+        engineClone.setMileage(engine.getMileage());
+        engineClone.setHorsePower(engine.getHorsePower());
+        engineClone.setWeight(engine.getWeight());
+        return engineClone;
+    }
 }
