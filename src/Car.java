@@ -14,7 +14,7 @@ public final class Car {
         engineClone.setHorsePower(engine.getHorsePower());
         engineClone.setWeight(engine.getWeight());
         engineClone.setMileage(engine.getMileage());
-        this.engine = engine.copy(engine);
+        this.engine = engine.copy();
     }
 
     public int getProductionYear() {
@@ -30,7 +30,7 @@ public final class Car {
     }
 
     public Engine getEngine() {
-        return engine.copy(this.engine);
+        return engine.copy();
     }
 
 
